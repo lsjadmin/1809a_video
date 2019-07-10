@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/v/video','Video\VideoController@index');
+
+
+Route::get('/v/oss1','Video\VideoController@oss1');
+
+
+Route::get('/chat/chat','Chat\ChatController@upload');
