@@ -24,4 +24,11 @@ class VideoController extends Controller
 
         }
 
+
+        public function test(){
+            $arr=VideoModel::get();
+            dd($arr);
+
+        }
+
 }
