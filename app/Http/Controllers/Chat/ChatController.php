@@ -40,7 +40,5 @@ class ChatController extends Controller
         }
 
     }
-    public function aa(){
-        
-    }
+ 
 }
