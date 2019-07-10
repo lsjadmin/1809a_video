@@ -20,5 +20,5 @@ Route::get('/v/video','Video\VideoController@index');
 
 Route::get('/v/oss1','Video\VideoController@oss1');
 
-
+Route::get('/ca','Chat\ChatController@uploaa'); 
 Route::get('/chat/chat','Chat\ChatController@upload');
