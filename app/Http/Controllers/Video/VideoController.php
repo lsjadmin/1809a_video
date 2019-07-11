@@ -24,11 +24,22 @@ class VideoController extends Controller
 
         }
 
-
+    //测试数据库
         public function test(){
             $arr=VideoModel::get();
             dd($arr);
 
+        }
+        //图片详情
+        public function video(){
+            $id=$_GET['vid'];
+            //echo $id;
+            $video=VideoModel::where(['v_id'=>$id])->first();
+            //dd($video);
+            $data=[
+                'video'=>$video
+            ];
+            return view('video.video',$data);
         }
 
 }

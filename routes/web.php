@@ -15,11 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/v/video','Video\VideoController@index');
 
+
+Route::get('/v/video','Video\VideoController@video'); //视频展示
 
 Route::get('/v/oss1','Video\VideoController@oss1');
 
 
-Route::get('/chat/chat','Chat\ChatController@upload');
-Route::get('/chat/test','Video\VideoController@test');
+Route::get('/chat/chat','Chat\ChatController@upload');  //循环上传视频
+Route::get('/chat/test','Video\VideoController@test');  //测试数据库

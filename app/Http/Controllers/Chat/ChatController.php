@@ -26,7 +26,7 @@ class ChatController extends Controller
                 if($v=='.' || $v=='..' ){
                      continue;
                 }
-                $file_name=Str::random(5).'.jpg';
+                $file_name='file/'.$v;
                 $local_file=$path.'/'.$v;
 
             try{
