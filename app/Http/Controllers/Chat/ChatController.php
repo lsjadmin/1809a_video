@@ -26,7 +26,7 @@ class ChatController extends Controller
                 if($v=='.' || $v=='..' ){
                      continue;
                 }
-                $file_name='file/'.$v;
+                $file_name='files/'.$v;
                 $local_file=$path.'/'.$v;
 
             try{
