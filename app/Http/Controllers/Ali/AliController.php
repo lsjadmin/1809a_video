@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 
 class AliController extends Controller
 {
-    //
+    //阿里云
     public function Oss(){
         $json=file_get_contents("php://input");
         $log_str=date("Y-m-d H:i:s").'>>>>'.$json."\n";
