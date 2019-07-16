@@ -28,4 +28,4 @@ Route::get('/chat/chat','Chat\ChatController@upload');  //循环上传视频
 Route::get('/chat/test','Video\VideoController@test');  //测试数据库
 
 //阿里云 oss
-Route::post('ify.oss','Ali\AliControllerr@Oss');
+Route::post('/notify/oss','Ali\AliControllerr@Oss');
