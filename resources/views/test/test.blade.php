@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -9,18 +10,19 @@
 </head>
 <body>
 <div class="prism-player" id="player-con"></div>
-    <h2>标题：{{$video->title}}</h2>
 <script>
     var player = new Aliplayer({
             "id": "player-con",
-            "source": "{{env('ADD_HOST')}}/{{$video->path}}",
-            "width": "50%",
+            "source": "http://play.lianshijiea.com/aa/aa.flv?auth_key=1562921526-0-0-0ea40c0b6f244ab53bea596053041678",
+            "width": "100%",
             "height": "500px",
             "autoplay": true,
-            "isLive": false,
+            "isLive": true,
             "rePlay": false,
             "playsinline": true,
             "preload": true,
+            "enableStashBufferForFlv": true,
+            "stashInitialSizeForFlv": 32,
             "controlBarVisibility": "hover",
             "useH5Prism": true
         }, function (player) {

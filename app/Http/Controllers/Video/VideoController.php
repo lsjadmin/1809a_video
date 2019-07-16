@@ -42,4 +42,10 @@ class VideoController extends Controller
             return view('video.video',$data);
         }
 
+
+        //测试
+    public function testa(){
+            return view('test.test');
+    }
+
 }
